@@ -1,13 +1,18 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - npm install
-      - npm install express --save
-  build:
-    commands:
-      - npm test
+    install:
+        commands:
+          - mkdir node_modules
+          - cp -a ~/node_modules_cache/. node_modules
+          - npm install
+          - npm install express --save
+    build:
+        commands:
+          - npm test
+cache:
+    paths:
+        - 'node_modules/**/*'
 artifacts:
   files:
     - '**/*'
