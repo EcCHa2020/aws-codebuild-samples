@@ -8,3 +8,5 @@ then
    . ~/.nvm/nvm.sh
    nvm install 4.3.2
 fi
+
+rm index.html
