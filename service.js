@@ -3,7 +3,7 @@ const calc = require('./calculator.js');
 var numeral = require('numeral');
 var path = require('path');
 
-const PORT = 8080;
+const PORT = 80;
 const HOST = '0.0.0.0';
 
 const app = express();
