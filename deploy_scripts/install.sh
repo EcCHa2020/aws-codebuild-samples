@@ -9,8 +9,5 @@ then
    nvm install 4.3.2
 fi
 
-FILE=/var/www/html/index.html
-
-if [ -f "$FILE" ]; then
-    rm /var/www/html/index.html
-fi
+file="/var/www/html/index.html"
+[ -f $file ] && rm $file
