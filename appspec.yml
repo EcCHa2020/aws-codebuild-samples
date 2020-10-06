@@ -15,10 +15,6 @@ hooks:
         - location: deploy_scripts/install.sh
           timeout: 300
           runas: ec2-user
-    AfterInstall:
-        - location: deploy_scripts/change_permissions.sh
-          timeout: 300
-          runas: ec2-user
     ApplicationStop:
         - location: deploy_scripts/stop.sh
           timeout: 300
