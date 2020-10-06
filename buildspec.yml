@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - npm install
+      - npm install express --save
   build:
     commands:
       - npm test
