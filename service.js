@@ -13,6 +13,7 @@ const REDIS_HOST = process.env.REDIS_HOST || 'localhost';
 const REDIS_PORT = process.env.REDIS_PORT || 6379;
 const REDIS_PASSWORD = process.env.REDIS_PASSWORD;
 
+console.log(USE_CACHE+' '+REDIS_HOST+' '+REDIS_PORT+' '+REDIS_PASSWORD);
 function createCache() {
   if (USE_CACHE) {
     var client = require('redis').createClient(
