@@ -1,4 +1,4 @@
-## AWS CodeBuild Samples
+## AWS CodeBuild Samples calculator
 
 Utilities and samples for building on CodeBuild
 
